@@ -160,7 +160,7 @@ class Shortcodes {
 		), $atts );
 
 		$class	= array();
-		$class[]	= ( $atts['fluid']   == 'true' )  ? 'container-fluid' : 'container';
+		$class[]	= 'container-fluid';
 
 		$return = Utilities::bs_output(
 			sprintf(
@@ -224,17 +224,11 @@ class Shortcodes {
 				"offset-lg"	=> false,
 				"offset-xl"	=> false,
 
-				"pull-xs"	=> false,
-				"pull-sm"	=> false,
-				"pull-md"	=> false,
-				"pull-lg"	=> false,
-				"pull-xl"	=> false,
-
-				"push-xs"	=> false,
-				"push-sm"	=> false,
-				"push-md"	=> false,
-				"push-lg"	=> false,
-				"push-xl"	=> false,
+				"order-xs"	=> false,
+				"order-sm"	=> false,
+				"order-md"	=> false,
+				"order-lg"	=> false,
+				"order-xl"	=> false,
 
 				"class"	=> false,
 				"data"	=> false
